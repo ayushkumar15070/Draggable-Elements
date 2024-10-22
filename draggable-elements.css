@@ -1,0 +1,38 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #1c1e2f;
+      font-family: 'Arial', sans-serif;
+}
+
+.draggable-box {
+      width: 150px;
+      height: 150px;
+      background-color: #292d3e;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: grab;
+      transition: transform 0.2s ease;
+}
+
+.draggable-box:active {
+      cursor: grabbing;
+      transform: scale(1.05);
+      background-color: #39455e;
+}
+
+.draggable-box:hover {
+      transform: scale(1.1);
+}     
